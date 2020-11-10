@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block content %} 
+   {% include "base/header.html" %}
+   {% include 'base/slider.html' %}
+   {% include 'home/home-register.html' %}   
+   {% include 'home/search.html' %}
+   {% include 'home/rublos.html' %}
+
+   <hr class="py-4">
+
+   {% include 'home/video.html' %}
+   
+{% endblock %}

@@ -1,0 +1,40 @@
+{% load static %}   
+<section class="header">
+   <div class="nav-pc">
+      <!-- <div class="logo">
+         <img src="{% static 'img/favicon.png' %}" alt="logo">
+      </div> -->
+      <nav class="navigation">
+         <ul class="nav-ul">
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+            <li><a href="">Eventos</a></li>
+            <li><a href="{% url 'ofertas' %}">Ofertas</a></li>
+            <li><a href="{%  url 'productos' %}">Productos</a></li>
+         </ul>
+         <ul class="nav-ul">
+            <li><a href="">Afiliados</a></li>
+            <li><a href="">Ingresar</a></li>
+            <li><a href="">Registro</a></li>
+         </ul>
+      </nav>
+   </div>
+
+   <div class="mobile">
+      <!-- <div class="logo">
+         <img src="{% static 'img/favicon.png' %}" alt="logo">
+      </div> -->
+      <nav class="mnav">
+         <ul class="mnav-ul">
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Eventos</a></li>
+            <li><a href="">Ofertas</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Afiliados</a></li>
+            <li><a href="">Ingresar</a></li>
+            <li><a href="">Registro</a></li>
+         </ul>
+      </nav>
+   </div>
+</section>

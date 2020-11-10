@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Ofertas{% endblock %}
+
+
+{% block content %} 
+
+   {% include "base/header.html" %}
+
+   
+   <div class="form-register">
+      <h3 class="text-center">Formualario de registro</h3>
+
+      <form  action="" method="POST" class="mt-2" autocomplete="off">
+         {% csrf_token %}
+         {{ form }}
+
+            <input type="text"  placeholder="País" id="pais">         
+            <input type="text"  placeholder="Ciudad" id="ciudad">
+            <input type="text"  placeholder="Apellidos" id="apellidos">
+            <input type="text"  placeholder="Teléfono personal" id="telefono_personal">
+            <input type="email"  placeholder="Email" id="email">
+            <input type="password"  placeholder="Contraseña" id="password">
+            <input type="password"  placeholder="Repetir Contraseña" id="repassword">
+            
+
+            <button class="btn btn-success btn-block mt-3" type="submit">Registrarme</button>
+      </form>
+
+   </div>
+   
+   <div class="bg-registro-empresario">
+      <img src="{% static 'img/bg-users.jpeg' %}" alt="bg-registro-epmpresario">
+   </div>
+
+   
+{% endblock %}

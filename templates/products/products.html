@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Productos{% endblock %}
+
+
+{% block content %} 
+   {% include "base/header.html" %}
+
+
+   <div class="videos_productos">
+
+      <img src="{% static 'img/products/flayer-products.jpg' %}" alt="">
+      <div class="franja_products">
+         <p>Nuestros Productos...</p>
+      </div>
+      <div class="hijo_videos_productos">
+         <div class="cajonVideo">
+            <video controls>
+            <source src="{% static 'video/plan-exito.mp4' %}" type="video/mp4">
+            <source src="{% static 'video/plan-exito.mp4' %}" type="video/ogg">
+         </video>
+         <a class="btn btn-primary mt-3" href="#">Adquierelo ya!</a>
+         </div>
+         <div class="cajonVideo">
+            <video controls>
+            <source src="{% static 'video/huellas.mp4' %}" type="video/mp4">
+            <source src="{% static 'video/huellas.mp4' %}" type="video/ogg">
+         </video>
+         <a class="btn btn-primary mt-3" href="#">Adquierelo ya!</a>
+         </div>
+
+         <div class="cajonVideo">
+            <video controls>
+            <source src="{% static 'video/netflix.mp4' %}" type="video/mp4">
+            <source src="{% static 'video/netflix.mp4' %}" type="video/ogg">
+         </video>
+         <a class="btn btn-primary mt-3" href="#">Adquierelo ya!</a>
+         </div>
+
+      </div>
+   </div>
+
+   
+{% endblock %}
